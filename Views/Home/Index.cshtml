@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero-grid">
+    <div class="hero-text">
+        <h1>Hi, I'm Mishie</h1>
+        <p>Tech Solopreneur focused on building digital tools that empower people and businesses in South Africa.</p>
+        <a href="/Home/Projects" class="cta-btn">Explore My Work</a>
+    </div>
+    <div class="hero-image">
+        <img src="~/Images/portfolioPic2.png" alt="Mishie Profile">
+    </div>
+</section>
+
+<div class="cv-layout">
+    <aside class="sidebar">
+        <h2>Personal Info</h2>
+        <p><strong>Full Name: </strong> Mishie Mangarateke</p>
+        <p><strong>Title: </strong> Tech Solopreneur</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mishie-mangarateke-88b656293/?originalSubdomain=za">Mishie@linkedin.com</a></p>
+        <br />
+        <p>
+            <a href="~/Documents/Mishie_PDFCV.pdf" download class="btn">Download My CV (PDF)</a>
+        </p>
+        <br />
+        <div class="profile-photo">
+            <img src="~/Images/CVicon.png" alt="Profile Photo" class="profile-img" />
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="cv-section about">
+            <h3>About Me</h3>
+            <p>Get to know who I am beyond the CV...my background, passion for technology, personal story, and what drives me to build digital solutions.</p>
+            <a asp-action="About" asp-controller="Home" class="btn">Read More</a>
+        </section>
+
+        <section class="cv-section experience">
+            <h3>Experience</h3>
+            <p>Explore my professional history: roles I've held and the responsibilities I’ve handled.</p>
+            <br />
+            <br />
+            <a asp-action="Experience" asp-controller="Home" class="btn">Read More</a>
+        </section>
+
+        <section class="cv-section education">
+            <h3>Education</h3>
+            <p>A look into my academic journey, schools, degrees, certifications, and relevant coursework that have shaped my technical expertise.</p>
+            <a asp-action="Education" asp-controller="Home" class="btn">Read More</a>
+        </section>
+
+        <section class="cv-section skills">
+            <h3>Skills</h3>
+            <p>An overview of my technical stack including programming languages, frameworks, tools, and soft skills that power my work.</p>
+            <a asp-action="Skills" asp-controller="Home" class="btn">Read More</a>
+        </section>
+
+        <section class="cv-section projects">
+            <h3>Projects</h3>
+            <p>View a collection of personal, academic, freelance projects, and what I learned during each build.</p>
+            <a asp-action="Projects" asp-controller="Home" class="btn">Read More</a>
+        </section>
+
+        <section class="cv-section contact">
+            <h3>Contact</h3>
+            <p>Need to reach me? Whether it's work inquiries, collaboration, or just saying hi. Here’s how you can connect.</p>
+            <br />
+            <a asp-action="Contact" asp-controller="Home" class="btn">Reach Out</a>
+        </section>
+    </main>
+
+    <footer class="cv-footer">
+       Thank you! For getting to know me.
+    </footer>
+</div>
