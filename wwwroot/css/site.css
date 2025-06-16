@@ -889,3 +889,117 @@ button,
     .scroll-btn.right {
         margin-left: 10px;
     }
+
+/* === Mobile Responsive Improvements === */
+
+@media (max-width: 767px) {
+
+    /* Hero Section: Stack image and text nicely */
+    .hero-grid {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* Layout: make sidebar and main stack vertically */
+    .cv-layout {
+        display: block;
+        padding: 20px 10px;
+    }
+
+    .sidebar {
+        margin-bottom: 20px;
+        border-right: none;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust section cards for readability */
+    .cv-section {
+        padding: 15px;
+    }
+
+        .cv-section h3 {
+            font-size: 1.4rem;
+        }
+
+    /* Navbar: collapse text size if needed */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    /* About hero: scale headings */
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    /* About mission: stack image and text vertically */
+    .about-section.about-mission {
+        flex-direction: column;
+    }
+
+    /* CTA: reduce padding for smaller screens */
+    .about-cta-enhanced {
+        padding: 30px 20px;
+    }
+
+    /* Experience, education, skills hero: shrink headings */
+    .experience-hero h1,
+    .education-hero h1,
+    .skills-hero h1 {
+        font-size: 2rem;
+    }
+
+    .experience-hero p,
+    .education-hero p,
+    .skills-hero p {
+        font-size: 1rem;
+    }
+
+    /* Contact thank you: stack content vertically */
+    .contact-thankyou {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .contact-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Referrals box: make full width on small screens */
+    .referrals {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    /* Project gallery: make images fit smaller screens */
+    .image-gallery img {
+        height: 180px;
+    }
+
+    .scroll-btn {
+        padding: 8px 16px;
+    }
+}
