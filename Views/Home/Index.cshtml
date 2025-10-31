@@ -1,76 +1,493 @@
-﻿@{
-    ViewData["Title"] = "Home";
+@{
+    ViewData["Title"] = "Portfolio";
 }
 
-<section class="hero-grid">
-    <div class="hero-text">
-        <h1>Hi, I'm Mishie</h1>
-        <p>Tech Solopreneur focused on building digital tools that empower people and businesses in South Africa.</p>
-        <a href="/Home/Projects" class="cta-btn">Explore My Work</a>
-    </div>
-    <div class="hero-image">
-        <img src="~/Images/portfolioPic2.png" alt="Mishie Profile">
+<section id="home" class="hero section">
+    <div class="hero__backdrop" aria-hidden="true"></div>
+    <div class="section__inner hero__inner">
+        <div class="hero__intro" data-animate>
+            <span class="hero__eyebrow">Available for visionary teams</span>
+            <h1 class="hero__title">
+                <span class="hero__script">Hey there&mdash;</span>
+                I am Mishie Mangarateke
+            </h1>
+            <p class="hero__description">
+                Analytical and Ambitious developer with an entrepreneurial edge. I design and ship digital products that join strategy, cloud architecture, and AI-assisted workflows to solve real problems for people and businesses in South Africa.
+            </p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="#projects">Browse selected builds</a>
+                <a class="btn btn--ghost" href="mailto:mangaratekethe1@gmail.com">Start a conversation</a>
+            </div>
+            <dl class="hero__meta">
+                <div>
+                    <dt>Location</dt>
+                    <dd>South Africa</dd>
+                </div>
+                <div>
+                    <dt>Focus</dt>
+                    <dd>Full-stack, AI-assisted workflows, Cloud</dd>
+                </div>
+                <div>
+                    <dt>Experience</dt>
+                    <dd>Founder-led delivery since 2023</dd>
+                </div>
+            </dl>
+        </div>
+        <div class="hero__visual" data-animate>
+            <div class="hero__badge">
+                <span>Innovation + impact</span>
+            </div>
+            <figure>
+                <img src="~/Images/portfolioPic4.png" alt="Portrait of Mishie Mangarateke">
+            </figure>
+            <div class="hero__stat">
+                <strong>4</strong>
+                <span>Full products launched across web &amp; mobile</span>
+            </div>
+        </div>
     </div>
 </section>
 
-<div class="cv-layout">
-    <aside class="sidebar">
-        <h2>Personal Info</h2>
-        <p><strong>Full Name: </strong> Mishie Mangarateke</p>
-        <p><strong>Title: </strong> Tech Solopreneur</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mishie-mangarateke-88b656293/?originalSubdomain=za">Mishie@linkedin.com</a></p>
-        <br />
-        <p>
-            <a href="~/Documents/Mishie_PDFCV.pdf" download class="btn">Download My CV (PDF)</a>
-        </p>
-        <br />
-        <div class="profile-photo">
-            <img src="~/Images/CVicon.png" alt="Profile Photo" class="profile-img" />
+<section id="profile" class="section profile">
+    <div class="section__inner profile__grid">
+        <article class="profile__story" data-animate>
+            <h2 class="section__title">Shaping ideas into reliable systems</h2>
+            <p>
+                I lead Mangam Technologies, where I translate business goals into thoughtful product strategies and cloud-native architectures. My workflow blends user-centered design, automation, and AI copilots to accelerate delivery without compromising craft.
+            </p>
+            <p>
+                I thrive where experimentation meets accountability. Building platforms that scale, delight, and earn trust. Every project becomes a chance to refine the playbook for future-ready digital ecosystems.
+            </p>
+            <div class="profile__highlights">
+                <div>
+                    <span class="label">Mindset</span>
+                    <p>Product-thinking technologist focused on measurable outcomes.</p>
+                </div>
+                <div>
+                    <span class="label">Working style</span>
+                    <p>Rapid prototyping, data-backed iterations, collaborative leadership.</p>
+                </div>
+            </div>
+        </article>
+        <aside class="profile__details">
+            <div class="info-card" data-animate>
+                <h3>Quick details</h3>
+                <ul>
+                    <li><span>Email</span><a href="mailto:mangaratekethe1@gmail.com">mangaratekethe1@gmail.com</a></li>
+                    <li><span>Phone</span><a href="tel:+27786637332">+27 78 663 7332</a></li>
+                    <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mishie-mangarateke-88b656293" target="_blank" rel="noopener">Connect</a></li>
+                    <li><span>Currently</span>Founder &amp; Developer at Mangam Technologies</li>
+                    <li><span>Interests</span>Automation, AI copilots, sustainable digital products</li>
+                </ul>
+            </div>
+            <div class="info-card" data-animate>
+                <h3>What partners say</h3>
+                <p>"Mishie brings clarity to complex briefs and builds resilient experiences that feel effortless."</p>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<section id="skills" class="section capabilities">
+    <div class="section__inner">
+        <header class="section__header" data-animate>
+            <span class="section__eyebrow">Capabilities</span>
+            <h2 class="section__title">A full-stack toolkit tuned for momentum</h2>
+            <p class="section__description">
+                From architecture to launch, I use trusted frameworks, cloud platforms, and AI copilots to keep teams moving fast while maintaining technical integrity.
+            </p>
+        </header>
+        <div class="capabilities__grid">
+            <article class="capabilities__card" data-animate>
+                <h3>Programming</h3>
+                <p>C# (.NET 6/7/9, EF Core), Kotlin, Java, HTML, CSS, JavaScript, SQL (MySQL / SQL Server / Oracle).</p>
+            </article>
+            <article class="capabilities__card" data-animate>
+                <h3>AI toolstack</h3>
+                <p>ChatGPT, Google Gemini, OpenAI Codex, GitHub Copilot with strong prompt-engineering practice.</p>
+            </article>
+            <article class="capabilities__card" data-animate>
+                <h3>Design craft</h3>
+                <p>Figma and Canva for high-fidelity UI/UX, product storytelling, and growth campaigns.</p>
+            </article>
+            <article class="capabilities__card" data-animate>
+                <h3>Web &amp; app delivery</h3>
+                <p>ASP.NET MVC &amp; Razor Pages, Android Studio, WordPress, Shopify, integrated ecosystems.</p>
+            </article>
+            <article class="capabilities__card" data-animate>
+                <h3>Cloud &amp; DevOps</h3>
+                <p>Azure App Service, Azure SQL &amp; Storage, Render, GitHub Actions for CI/CD automation.</p>
+            </article>
+            <article class="capabilities__card" data-animate>
+                <h3>Product leadership</h3>
+                <p>Scrum and Agile facilitation, SDLC planning, user stories, UML, Lucidchart, cross-functional alignment.</p>
+            </article>
         </div>
-    </aside>
+        <div class="soft-skills" data-animate>
+            <h3>Human-first strengths</h3>
+            <ul>
+                <li>Problem solving</li>
+                <li>Critical thinking</li>
+                <li>Adaptability</li>
+                <li>Team leadership</li>
+                <li>Communication</li>
+                <li>Time management</li>
+                <li>Entrepreneurial thinking</li>
+            </ul>
+        </div>
+        <div class="toolbelt" data-animate>
+            <h3>Toolbox in action</h3>
+            <p class="toolbelt__intro">These are the platforms and copilots that power my day-to-day delivery.</p>
+            <div class="toolbelt__grid">
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/csharp.svg")" alt="C sharp logo">
+                    <figcaption>C# &amp; .NET</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/kotlin.svg")" alt="Kotlin logo">
+                    <figcaption>Kotlin</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/azure.svg")" alt="Azure logo">
+                    <figcaption>Azure Cloud</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/azuresqldatabase.svg")" alt="Azure SQL Database logo">
+                    <figcaption>Azure SQL</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/render.png")" alt="Render logo">
+                    <figcaption>Render</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/github.svg")" alt="GitHub logo">
+                    <figcaption>GitHub Actions</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/figma.svg")" alt="Figma logo">
+                    <figcaption>Figma</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/canva.svg")" alt="Canva logo">
+                    <figcaption>Canva Pro</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/visualstudio.svg")" alt="Visual Studio logo">
+                    <figcaption>Visual Studio</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="@Url.Content("~/Images/skills/androidstudio.svg")" alt="Android Studio logo">
+                    <figcaption>Android Studio</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="~/Images/skills/vscodelogo.png" alt="Visual Studio Code logo">
+                    <figcaption>VS Code</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="~/Images/skills/geminilogo.png" alt="Google Gemini logo">
+                    <figcaption>Gemini</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="~/Images/skills/chatlogo.png" alt="ChatGPT logo">
+                    <figcaption>ChatGPT</figcaption>
+                </figure>
+                <figure class="toolbelt__item">
+                    <img loading="lazy" src="~/Images/skills/codexlogo.png" alt="OpenAI Codex logo">
+                    <figcaption>Codex</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <main class="main-content">
-        <section class="cv-section about">
-            <h3>About Me</h3>
-            <p>Get to know who I am beyond the CV...my background, passion for technology, personal story, and what drives me to build digital solutions.</p>
-            <a asp-action="About" asp-controller="Home" class="btn">Read More</a>
-        </section>
+<section id="experience" class="section experience">
+    <div class="section__inner">
+        <header class="section__header" data-animate>
+            <span class="section__eyebrow">Journey</span>
+            <h2 class="section__title">Experience that blends strategy, delivery, and service</h2>
+            <p class="section__description">I build and sustain solutions that solve for operations today while creating space for tomorrow's opportunities.</p>
+        </header>
+        <div class="experience__timeline">
+            <article class="experience__item" data-animate>
+                <div class="experience__meta">
+                    <span class="experience__period">2023 &ndash; Present</span>
+                    <span class="experience__role">Founder &amp; Developer</span>
+                    <span class="experience__company">Mangam Technologies</span>
+                </div>
+                <ul class="experience__bullets">
+                    <li>Architected and launched multiple brand ecosystems across web and mobile platforms.</li>
+                    <li>Led UI/UX, AI integration, and Azure deployments with end-to-end delivery ownership.</li>
+                    <li>Built reusable components, automation pipelines, and measurement frameworks for future releases.</li>
+                </ul>
+            </article>
+            <article class="experience__item" data-animate>
+                <div class="experience__meta">
+                    <span class="experience__period">2021 &ndash; 2022</span>
+                    <span class="experience__role">Tech Assistant (Part-Time)</span>
+                    <span class="experience__company">Mangam Resort</span>
+                </div>
+                <ul class="experience__bullets">
+                    <li>Digitized operational workflows and strengthened on-site booking experiences.</li>
+                    <li>Supported web maintenance, QR-based ticketing, and customer support systems.</li>
+                    <li>Introduced automation that reduced manual processing for service teams.</li>
+                </ul>
+            </article>
+        </div>
+        <div class="experience__education">
+            <h3 data-animate>Education</h3>
+            <div class="experience__education-grid">
+                <div class="education-card" data-animate>
+                    <span class="education-card__period">2023 &ndash; 2025</span>
+                    <h4>Bachelor of Computer &amp; Information Science in Application Development</h4>
+                    <p>IIE Varsity College</p>
+                </div>
+                <div class="education-card" data-animate>
+                    <span class="education-card__period">2018 &ndash; 2022</span>
+                    <h4>Matric Certificate</h4>
+                    <p>Cornerstone College</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section class="cv-section experience">
-            <h3>Experience</h3>
-            <p>Explore my professional history: roles I've held and the responsibilities I’ve handled.</p>
-            <br />
-            <br />
-            <a asp-action="Experience" asp-controller="Home" class="btn">Read More</a>
-        </section>
+<section id="projects" class="section projects">
+    <div class="section__inner">
+        <header class="section__header" data-animate>
+            <span class="section__eyebrow">Project portfolio</span>
+            <h2 class="section__title">Media-rich journeys that showcase my craft</h2>
+            <p class="section__description">From hospitality and healthcare to property ecosystems, these experiences are built to perform and persuade.</p>
+        </header>
 
-        <section class="cv-section education">
-            <h3>Education</h3>
-            <p>A look into my academic journey, schools, degrees, certifications, and relevant coursework that have shaped my technical expertise.</p>
-            <a asp-action="Education" asp-controller="Home" class="btn">Read More</a>
-        </section>
+        <div class="project-spotlight" data-animate>
+            <div class="project-spotlight__content">
+                <span class="project-spotlight__tag">Property tech</span>
+                <h3>Tenantree Ecosystem</h3>
+                <p>Tenant engagement platform pairing a .NET Core MVC operations hub with a Kotlin mobile companion and Azure SQL single source of truth.</p>
+                <ul class="project-spotlight__list">
+                    <li>Story-driven ad concept produced with Gemini and Canva to communicate tenant onboarding journeys.</li>
+                    <li>Role-based authentication with biometric sign-in across the mobile stack.</li>
+                    <li>Shared data model enabling transparent operations for tenants, landlords, and service teams.</li>
+                </ul>
+                <div class="project-spotlight__links">
+                    <a class="btn btn--primary" href="https://www.figma.com/design/wC5BNF2AZf3Fp0oGD1BxDh/Tenantree?node-id=0-1&amp;p=f&amp;t=Nq193H5o5Ei1HaK0-0" target="_blank" rel="noopener">View Figma prototype</a>
+                    <a class="btn btn--ghost" href="#contact">Request a live demo</a>
+                </div>
+            </div>
+            <div class="project-spotlight__media">
+                <img class="project-spotlight__poster" src="@Url.Content("~/Images/Tenantree/Tenantree Ad Mockups.jpeg")" alt="Tenantree promotional poster concept">
+            </div>
+        </div>
 
-        <section class="cv-section skills">
-            <h3>Skills</h3>
-            <p>An overview of my technical stack including programming languages, frameworks, tools, and soft skills that power my work.</p>
-            <a asp-action="Skills" asp-controller="Home" class="btn">Read More</a>
-        </section>
+        <div class="project-spotlight__video-section" data-animate>
+            <h2 class="project-spotlight__video-heading">Curated Tenantree Ad</h2>
+            <video class="project-spotlight__video" autoplay loop muted playsinline preload="auto">
+                <source src="@Url.Content("~/Videos/TenantreeAd/TenantreeAdWeb.mp4")" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
-        <section class="cv-section projects">
-            <h3>Projects</h3>
-            <p>View a collection of personal, academic, freelance projects, and what I learned during each build.</p>
-            <a asp-action="Projects" asp-controller="Home" class="btn">Read More</a>
-        </section>
+        <br />
 
-        <section class="cv-section contact">
-            <h3>Contact</h3>
-            <p>Need to reach me? Whether it's work inquiries, collaboration, or just saying hi. Here’s how you can connect.</p>
-            <br />
-            <a asp-action="Contact" asp-controller="Home" class="btn">Reach Out</a>
-        </section>
-    </main>
+        <div class="project-case-list">
+            <article class="project-case" data-animate>
+                <div class="project-case__info">
+                    <span class="project-case__tag">Hospitality MVC</span>
+                    <h3>Mangam Resort Experience</h3>
+                    <p>Immersive resort marketing site with Razor Pages, Three.js visuals, digital ticketing, and QR validation workflows.</p>
+                    <ul class="project-case__bullets">
+                        <li>Interactive landing pages rendered with Three.js for atmospheric storytelling.</li>
+                        <li>Online ticketing funnel with QR verification for on-site guest processing.</li>
+                        <li>Azure-backed deployments with staged environments for rapid iteration.</li>
+                    </ul>
+                </div>
+                <div class="project-case__gallery-wrap">
+                    <div class="project-case__controls">
+                        <button type="button" class="rail-btn" aria-label="Scroll Mangam Resort gallery left" data-scroll-direction="prev" data-scroll-target="#gallery-mangam">&#8592;</button>
+                        <button type="button" class="rail-btn" aria-label="Scroll Mangam Resort gallery right" data-scroll-direction="next" data-scroll-target="#gallery-mangam">&#8594;</button>
+                    </div>
+                    <div class="project-case__gallery" id="gallery-mangam" data-scroll-container>
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR1.png")" alt="Mangam Resort hero section">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR2.png")" alt="Mangam Resort booking layout">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR3.png")" alt="Mangam Resort accommodation detail">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR4.png")" alt="Mangam Resort experience feature">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR5.png")" alt="Mangam Resort gallery section">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR6.png")" alt="Mangam Resort testimonials">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR7.png")" alt="Mangam Resort pricing overview">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR8.png")" alt="Mangam Resort mobile mockup 1">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR9.png")" alt="Mangam Resort mobile mockup 2">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR10.png")" alt="Mangam Resort ticketing screen">
+                        <img loading="lazy" src="@Url.Content("~/Images/MangamRe/MR11.png")" alt="Mangam Resort QR validation">
+                    </div>
+                </div>
+            </article>
 
-    <footer class="cv-footer">
-       Thank you! For getting to know me.
-    </footer>
-</div>
+            <article class="project-case" data-animate>
+                <div class="project-case__info">
+                    <span class="project-case__tag">E-commerce MVC</span>
+                    <h3>AffordNiture Commerce</h3>
+                    <p>Responsive furniture marketplace with bespoke branding, end-to-end cart flows, and persuasive storytelling.</p>
+                    <ul class="project-case__bullets">
+                        <li>Custom product catalogues with rich lifestyle imagery for each furniture collection.</li>
+                        <li>Secure checkout journey integrated with SQL Server and inventory management.</li>
+                        <li>Automated email-ready assets to support campaigns and post-purchase nurturing.</li>
+                    </ul>
+                </div>
+                <div class="project-case__gallery-wrap">
+                    <div class="project-case__controls">
+                        <button type="button" class="rail-btn" aria-label="Scroll AffordNiture gallery left" data-scroll-direction="prev" data-scroll-target="#gallery-afford">&#8592;</button>
+                        <button type="button" class="rail-btn" aria-label="Scroll AffordNiture gallery right" data-scroll-direction="next" data-scroll-target="#gallery-afford">&#8594;</button>
+                    </div>
+                    <div class="project-case__gallery" id="gallery-afford" data-scroll-container>
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford.png")" alt="AffordNiture brand cover">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford1.png")" alt="AffordNiture homepage hero">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford2.png")" alt="AffordNiture featured collection">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford3.png")" alt="AffordNiture product grid">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford4.png")" alt="AffordNiture product detail">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford5.png")" alt="AffordNiture cart experience">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford6.png")" alt="AffordNiture checkout summary">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford7.png")" alt="AffordNiture receipt mockup">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford8.png")" alt="AffordNiture responsive layout 1">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford9.png")" alt="AffordNiture responsive layout 2">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford10.png")" alt="AffordNiture marketing asset 1">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford11.png")" alt="AffordNiture marketing asset 2">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford12.png")" alt="AffordNiture marketing asset 3">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford13.png")" alt="AffordNiture marketing asset 4">
+                        <img loading="lazy" src="@Url.Content("~/Images/Affordniture/afford14.png")" alt="AffordNiture marketing asset 5">
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="creative-grid">
+            <article class="creative-card" data-animate>
+                <div class="creative-card__header">
+                    <span class="creative-card__tag">Medical aesthetics</span>
+                    <h3>Dr Magoda Digital Suite</h3>
+                </div>
+                <div class="creative-card__gallery" id="gallery-magoda" data-scroll-container>
+                    <img loading="lazy" src="@Url.Content("~/Images/Dr Magoda/Magoda.JPG")" alt="Dr Magoda marketing poster designed in Canva">
+                    <img loading="lazy" src="@Url.Content("~/Images/Dr Magoda/Magoda2.jpg")" alt="Dr Magoda medical certificate template created in Canva">
+                </div>
+                <div class="creative-card__footer">
+                    <p>Poster and medical certificate designs crafted in Canva to professionalise patient touchpoints and outreach.</p>
+                </div>
+            </article>
+
+            <article class="creative-card" data-animate>
+                <div class="creative-card__header">
+                    <span class="creative-card__tag">Healthcare wellness</span>
+                    <h3>Pure Med Wellness</h3>
+                </div>
+                <div class="creative-card__gallery" id="gallery-puremed" data-scroll-container>
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed1.jpg")" alt="Pure Med wellness business profile cover">
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed2.jpg")" alt="Pure Med brand documentation page">
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed3.jpg")" alt="Pure Med company structure page">
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed4.jpg")" alt="Pure Med promotional poster">
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed5.jpg")" alt="Pure Med flyer">
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed6.jpg")" alt="Pure Med brochure interior">
+                    <img loading="lazy" src="@Url.Content("~/Images/Pure Med/pmed7.jpg")" alt="Pure Med email signature mockup">
+                </div>
+                <div class="creative-card__footer">
+                    <p>Poster series, brand documentation, and email signature package built in Canva to unify messaging and patient engagement.</p>
+                </div>
+            </article>
+
+            <article class="creative-card" data-animate>
+                <div class="creative-card__header">
+                    <span class="creative-card__tag">Education &amp; community</span>
+                    <h3>True Vine Ministries</h3>
+                </div>
+                <div class="creative-card__gallery" id="gallery-truevine" data-scroll-container>
+                    <img loading="lazy" src="@Url.Content("~/Images/True Vine/TrueVine.PNG")" alt="True Vine youth camp poster designed in Canva">
+                </div>
+                <div class="creative-card__footer">
+                    <p>Church camp poster capturing the energy of youth ministry and encouraging sign-ups for the 2025 camp experience.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="clients" class="section testimonials">
+    <div class="section__inner">
+        <header class="section__header" data-animate>
+            <span class="section__eyebrow">Client love</span>
+            <h2 class="section__title">Trusted by founders, clinicians, and community leaders</h2>
+            <p class="section__description">A handful of the kind words that keep me building purposeful products and media.</p>
+        </header>
+        <div class="testimonials__grid">
+            <figure class="testimonial-card" data-animate>
+                <blockquote>I love the poster so much, thank you!</blockquote>
+                <figcaption>Dr Asanda Magoda</figcaption>
+            </figure>
+            <figure class="testimonial-card" data-animate>
+                <blockquote>Thank you so much Mishie, appreciate the work!!!</blockquote>
+                <figcaption>Vitivi (Pure Med Wellness)</figcaption>
+            </figure>
+            <figure class="testimonial-card" data-animate>
+                <blockquote>Thank you so much, we love your work, you're the best!</blockquote>
+                <figcaption>Khanyisile Mavuso</figcaption>
+            </figure>
+            <figure class="testimonial-card" data-animate>
+                <blockquote>The church appreciates your service.</blockquote>
+                <figcaption>Pastor Pinkie Mbatsane</figcaption>
+            </figure>
+            <figure class="testimonial-card" data-animate>
+                <blockquote>I love your work and many people praised the work you did for me, kudos man.</blockquote>
+                <figcaption>Kamogelo Serepo</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="section achievements">
+    <div class="section__inner achievements__content">
+        <div class="achievements__list" data-animate>
+            <span class="section__eyebrow">Highlights</span>
+            <h2 class="section__title">Wins beyond the code</h2>
+            <ul>
+                <li>Chess Player of the Year (2017)</li>
+                <li>Academic Top Ten (Primary)</li>
+                <li>Deputy Hostel Head Boy (Primary and High School)</li>
+                <li>Sports participation in biathlon, rugby, basketball, and swimming</li>
+            </ul>
+        </div>
+        <div class="achievements__extra" data-animate>
+            <h3>Additional information</h3>
+            <p>APS: 32 (LO excluded) &ndash; all subjects achieved 60% or higher. Full matric results and identification documents available on request.</p>
+            <p>Exploring how AI can accelerate sustainable products and unlock access for communities across South Africa.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="section__inner contact__inner">
+        <div class="contact__card" data-animate>
+            <span class="section__eyebrow">Let's collaborate</span>
+            <h2 class="section__title">Have a challenge worth solving?</h2>
+            <p>Whether you are shaping a new venture, evolving an existing product, or exploring AI-led transformation, I am ready to design and deploy the next chapter.</p>
+            <div class="contact__actions">
+                <a class="btn btn--primary" href="mailto:mangaratekethe1@gmail.com">Send an email</a>
+                <a class="btn btn--ghost" href="~/Documents/Mishie_PDFCV.pdf" download>Download CV</a>
+            </div>
+        </div>
+        <div class="contact__reachout" data-animate>
+            <div class="contact__channels">
+                <div>
+                    <span>Email</span>
+                    <a href="mailto:mangaratekethe1@gmail.com">mangaratekethe1@gmail.com</a>
+                </div>
+                <div>
+                    <span>Phone</span>
+                    <a href="tel:+27786637332">+27 78 663 7332</a>
+                </div>
+                <div>
+                    <span>Location</span>
+                    <p>South Africa &ndash; partnering remotely and on-site.</p>
+                </div>
+            </div>
+            <p class="contact__note">Prefer a quick intro call? Drop a line and I will send over a calendar link.</p>
+        </div>
+    </div>
+</section>

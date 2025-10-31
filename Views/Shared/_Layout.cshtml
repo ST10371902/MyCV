@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,104 +8,50 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OnlineCV.styles.css" asp-append-version="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Mishie's CV</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+<body class="no-js" data-theme="dark">
+    <div class="scroll-progress" aria-hidden="true">
+        <span class="scroll-progress__bar"></span>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container" style="color: white">
-            &copy; 2025 - Mishie Mangarateke. All rights reserved. - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <header class="site-header" role="banner">
+        <div class="site-header__inner">
+            <a class="brand-mark" asp-area="" asp-controller="Home" asp-action="Index">
+                Mishie Mangarateke
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+                <span class="nav-toggle__label">Menu</span>
+                <span class="nav-toggle__icon" aria-hidden="true"></span>
+            </button>
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary navigation">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#profile">Profile</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#clients">Clients</a>
+                <a class="nav-link" href="#achievements">Achievements</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false">
+                <span class="theme-toggle__icon" aria-hidden="true"></span>
+                <span class="theme-toggle__label">Light</span>
+            </button>
+            <a class="contact-chip" href="#contact">Let’s talk</a>
+        </div>
+    </header>
+    <main class="page-shell" role="main">
+        @RenderBody()
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p> </p>
+            <p>&copy; 2025 Mishie Mangarateke: Ambitious minds build the future.</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-    <script>
-        document.querySelectorAll('.flip-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                if (!card.classList.contains('flipped')) {
-                    card.classList.add('flipped');
-                }
-            });
-        });
-    </script>
-    <script>
-        function scrollGallery(direction) {
-            const gallery = document.getElementById("affordGallery");
-            const scrollAmount = 320;
-
-            if (direction === "left") {
-                gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-            } else {
-                gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
-            }
-        }
-    </script>
-    <script>
-        function scrollGallery2(direction) {
-            const gallery = document.getElementById("affordGallery2");
-            const scrollAmount = 320;
-
-            if (direction === "left") {
-                gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-            } else {
-                gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
-            }
-        }
-    </script>
-    <script>
-        function scrollGallery3(direction) {
-            const gallery = document.getElementById("affordGallery3");
-            const scrollAmount = 320;
-
-            if (direction === "left") {
-                gallery.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-            } else {
-                gallery.scrollBy({ left: scrollAmount, behavior: "smooth" });
-            }
-        }
-    </script>
 </body>
 </html>
