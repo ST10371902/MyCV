@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - OnlineCV</title>
-    <script type="importmap"></script>
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" asp-append-version="true" />
+    <link rel="shortcut icon" href="~/favicon.ico" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OnlineCV.styles.css" asp-append-version="true" />
@@ -37,7 +38,7 @@
                 <span class="theme-toggle__icon" aria-hidden="true"></span>
                 <span class="theme-toggle__label">Light</span>
             </button>
-            <a class="contact-chip" href="#contact">Let’s talk</a>
+            <a class="contact-chip" href="#contact">Let's talk</a>
         </div>
     </header>
     <main class="page-shell" role="main">
@@ -46,11 +47,15 @@
     <footer class="site-footer">
         <div class="site-footer__inner">
             <p> </p>
-            <p>&copy; 2025 Mishie Mangarateke: Ambitious minds build the future.</p>
+            <p>&copy; 2025 Mishie Mangarateke: Big or small, digitalise them all.</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Three.js for lightweight hero 3D logo (r128 for legacy script support) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -1,3 +1,4 @@
+wwwroot\3D\mangamtech_logo.glb
 wwwroot\css\site.css
 wwwroot\css\site.partial
 wwwroot\Documents\Mishie's CV.pdf
@@ -50,6 +51,8 @@ wwwroot\Images\MangamRe\MR6.png
 wwwroot\Images\MangamRe\MR7.png
 wwwroot\Images\MangamRe\MR8.png
 wwwroot\Images\MangamRe\MR9.png
+wwwroot\Images\mangamtech-logo.png
+wwwroot\Images\mangamtech_favicon.ico
 wwwroot\Images\mission.png
 wwwroot\Images\music.jpg
 wwwroot\Images\portfolioPic.jpg
@@ -161,15 +164,19 @@ wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\Videos\TenantreeAd\TenantreeAdWeb.mp4
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\js\site.js
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\css\site.css
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\favicon.ico
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\mangamtech_favicon.ico
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\androidstudio.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\azure.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\azuresqldatabase.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\canva.svg
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\chatgpt.svg
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\codex.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\csharp.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\css3.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\figma.svg
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\gemini.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\github.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\html5.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\java.svg
@@ -179,7 +186,8 @@ C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\microsoftsql
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\mysql.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\sqldeveloper.svg
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\visualstudio.svg
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\css\site.css
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\vscode.svg
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\js\site.js
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -222,6 +230,7 @@ C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\boot
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
@@ -238,8 +247,3 @@ C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\jquery\dist\jquery.sli
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\jquery\dist\jquery.slim.min.js
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\jquery\dist\jquery.slim.min.map
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\jquery\LICENSE.txt
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\chatgpt.svg
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\codex.svg
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\gemini.svg
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\vscode.svg
