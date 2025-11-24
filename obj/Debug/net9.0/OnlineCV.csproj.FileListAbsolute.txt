@@ -22,8 +22,9 @@ C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\rjsmcshtml.dswa.c
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\scopedcss\bundle\OnlineCV.styles.css
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\scopedcss\projectbundle\OnlineCV.bundle.scp.css
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\mv36ijncbv-hrxd43tsfa.gz
-C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\pm2fpqdplt-61n19gt1b8.gz
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\mv36ijncbv-vk89gmorgd.gz
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\3vp7rghwbw-2zk25agvn2.gz
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\pm2fpqdplt-2zk25agvn2.gz
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\53gzpav1y7-9ilkeed576.gz
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\s5pwx5p19e-9ndfixx2ks.gz
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\obj\Debug\net9.0\compressed\uwee3sdru6-3xao2446us.gz

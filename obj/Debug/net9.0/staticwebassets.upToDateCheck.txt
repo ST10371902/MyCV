@@ -1,6 +1,7 @@
 wwwroot\3D\mangamtech_logo.glb
 wwwroot\css\site.css
 wwwroot\css\site.partial
+wwwroot\cvfavicon.ico
 wwwroot\Documents\Mishie's CV.pdf
 wwwroot\Documents\Mishie_PDFCV.pdf
 wwwroot\favicon.ico
@@ -165,6 +166,7 @@ wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\Videos\TenantreeAd\TenantreeAdWeb.mp4
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\css\site.css
+C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\cvfavicon.ico
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\favicon.ico
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\mangamtech_favicon.ico
 C:\Users\manga\source\repos\OnlineCV\OnlineCV\wwwroot\Images\skills\androidstudio.svg

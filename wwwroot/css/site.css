@@ -1598,7 +1598,13 @@ body.reduce-motion .animate-target {
     }
 
     .hero__visual {
-        order: -1;
+        order: 1;
+        justify-content: center;
+    }
+
+    .hero__logo-3d {
+        margin: 0 auto;
+        transform: none;
     }
 
     .hero__badge {
@@ -2898,14 +2904,14 @@ section {
 
     .hero__visual {
         min-height: 200px;
-        order: -1;
+        order: 1;
         justify-content: center;
         padding-right: 0;
     }
 
     .hero__logo-3d {
         width: min(360px, 100%);
-        margin-left: 0;
+        margin: 0 auto;
         transform: none;
     }
 
