@@ -1,11 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.remove('no-js');
 
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
     const prefersReducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
     let reduceMotion = prefersReducedMotionQuery.matches;
     const scrollBehavior = reduceMotion ? 'auto' : 'smooth';
     const hasThree = typeof window.THREE !== 'undefined';
     const hasGLTFLoader = hasThree && typeof THREE.GLTFLoader !== 'undefined';
+
+    const resetHorizontalGalleries = () => {
+        document.querySelectorAll('.project-case__gallery, .creative-card__gallery').forEach(gallery => {
+            gallery.scrollLeft = 0;
+        });
+    };
+
+    window.addEventListener('pageshow', resetHorizontalGalleries);
+    window.addEventListener('load', resetHorizontalGalleries);
 
     if (reduceMotion) {
         document.body.classList.add('reduce-motion');
@@ -310,9 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Ensure horizontal galleries start at the first item
-    document.querySelectorAll('.project-case__gallery, .creative-card__gallery').forEach(gallery => {
-        gallery.scrollLeft = 0;
-    });
+    resetHorizontalGalleries();
 
     // Active nav link highlighting
     const sections = document.querySelectorAll('section[id]');
@@ -355,12 +366,21 @@ document.addEventListener('DOMContentLoaded', () => {
             return null;
         }
 
+        const getContainerSize = () => {
+            const rect = container.getBoundingClientRect();
+            const width = rect.width || container.clientWidth || 320;
+            const height = rect.height || container.clientHeight || width || 320;
+            return { width, height };
+        };
+
+        const { width: initWidth, height: initHeight } = getContainerSize();
+
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 100);
+        const camera = new THREE.PerspectiveCamera(45, initWidth / initHeight, 0.1, 100);
         camera.position.set(0, 0, 5);
 
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setSize(initWidth, initHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         renderer.setClearColor(0x000000, 0);
         container.innerHTML = '';
@@ -421,13 +441,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const resize = () => {
-            const { clientWidth, clientHeight } = container;
-            if (!clientWidth || !clientHeight) {
+            const { width, height } = getContainerSize();
+            if (!width || !height) {
                 return;
             }
-            camera.aspect = clientWidth / clientHeight;
+            camera.aspect = width / height;
             camera.updateProjectionMatrix();
-            renderer.setSize(clientWidth, clientHeight);
+            renderer.setSize(width, height);
         };
 
         const modelUrl = new URL('/3D/mangamtech_logo.glb', window.location.origin).href;
