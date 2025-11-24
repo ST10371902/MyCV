@@ -309,6 +309,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Ensure horizontal galleries start at the first item
+    document.querySelectorAll('.project-case__gallery, .creative-card__gallery').forEach(gallery => {
+        gallery.scrollLeft = 0;
+    });
+
     // Active nav link highlighting
     const sections = document.querySelectorAll('section[id]');
     if (navLinks.length && sections.length && 'IntersectionObserver' in window) {

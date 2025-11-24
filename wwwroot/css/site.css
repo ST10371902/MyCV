@@ -2738,7 +2738,7 @@ body.reduce-motion .animate-target {
 }
 
 .project-case__gallery img {
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -2897,9 +2897,16 @@ section {
 
 /* Mobile Responsiveness for Hero */
 @media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding-block: clamp(4rem, 12vw, 5.5rem) clamp(3rem, 10vw, 4.5rem);
+        align-items: flex-start;
+    }
+
     .hero__inner {
         grid-template-columns: 1fr;
         gap: 2rem;
+        justify-items: center;
     }
 
     .hero__visual {
@@ -2913,6 +2920,9 @@ section {
         width: min(360px, 100%);
         margin: 0 auto;
         transform: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact__card {
