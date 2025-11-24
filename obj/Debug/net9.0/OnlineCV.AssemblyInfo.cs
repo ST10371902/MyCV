@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineCV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+389edf15bb7444501e5466a497f61ca4fd012ebe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aca296e4d17ecb77550bec3b057b5fb80bb81f5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineCV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineCV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

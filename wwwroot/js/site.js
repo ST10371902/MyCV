@@ -13,12 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resetHorizontalGalleries = () => {
         document.querySelectorAll('.project-case__gallery, .creative-card__gallery').forEach(gallery => {
-            gallery.scrollLeft = 0;
+            gallery.scrollTo({ left: 0, behavior: 'instant' });
         });
     };
 
+    // Reset immediately and after short delays to handle lazy loading
+    resetHorizontalGalleries();
     window.addEventListener('pageshow', resetHorizontalGalleries);
-    window.addEventListener('load', resetHorizontalGalleries);
+    window.addEventListener('load', () => {
+        resetHorizontalGalleries();
+        // Additional delayed reset to handle lazy-loaded images and browser scroll restoration
+        setTimeout(resetHorizontalGalleries, 100);
+        setTimeout(resetHorizontalGalleries, 500);
+    });
 
     if (reduceMotion) {
         document.body.classList.add('reduce-motion');
